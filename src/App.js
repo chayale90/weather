@@ -1,7 +1,6 @@
 import Message from './comps/message';
 import './App.css';
 import Counter from './comps/counter';
-import Alert from './comps/alert';
 import InputVal from './comps/inputVal';
 
 function App() {
@@ -11,10 +10,13 @@ function App() {
       {/* חיבור בין קומפנינטה
       פשוט זימון שלה ממש כמו תגית יחידה */}
       {/* <Message txt="first 111111" /> */}
-      {/* <Message txt="last 22222" /> */}
-      {/* <Alert txt="last 33333" bg="grey" /> */}
+      {/* 
+      let msg1 = new Message("first 1111")
+      msg1.render()
+      */}
+      {/* <Message txt="last 22222"  /> */}
       <Counter />
-      <InputVal/>
+      <InputVal />
     </div>
   );
 }

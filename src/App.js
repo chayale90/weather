@@ -1,13 +1,18 @@
-import Message from './comps/message';
+
+import AppTv from './api_comps/appTv';
 import './App.css';
-import Counter from './comps/counter';
-import InputVal from './comps/inputVal';
-import AppHw from './hw_comps/appHw';
+import AppHooks from './hooks_comps/appHooks';
+import AppWeather from './weather_comps/appWeather';
+// import AppHw from './hw_comps/appHw';
 
 function App() {
   return (
     <div className="App">
-      <AppHw/>
+
+      <AppWeather />
+      {/* <AppTv /> */}
+      {/* <AppHooks /> */}
+      {/* <AppHw /> */}
     </div>
   );
 }

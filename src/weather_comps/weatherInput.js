@@ -12,7 +12,7 @@ export default function WeatherInput(props) {
           <input ref={inputRef} type="text" className='form-control' placeholder='search for city/town...' />
           <button onClick={() => {
             props.doApi(inputRef.current.value);
-          }} className='btn btn-success'>Search</button>
+          }} className='btn btn-success ms-2'>Search</button>
         </div>
       </nav>
     </div>

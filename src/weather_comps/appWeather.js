@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import WeahterInfo from './weatherInfo'
+import WeatherInfo from './weatherInfo';
 import WeatherInput from './weatherInput'
 
 export default function AppWeather() {
@@ -20,7 +20,8 @@ export default function AppWeather() {
   return (
     <div>
       <WeatherInput doApi={doApi} />
-      <WeahterInfo item={infoObj} />
+      <WeatherInfo item={infoObj}/>
     </div>
   )
+ 
 }

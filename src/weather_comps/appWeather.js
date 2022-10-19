@@ -11,7 +11,7 @@ export default function AppWeather() {
   }, [])
 
   const doApi = async (_townName) => {
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${_townName}&appid=3069ae2718e40f8dc1998b7250e16f10&units=metric`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${_townName}&appid=64cd513da356063b49bc3bdd79b3742e&units=metric`;
     let resp = await axios.get(url);
     console.log(resp.data);
     setInfoObj(resp.data);

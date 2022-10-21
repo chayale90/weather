@@ -24,8 +24,8 @@ export default function MovieList() {
 
 
     return (
-        <div className='container'>
-            <h1>List of movies:</h1>
+        <div className='container '>
+            <h1 className='display-5 m-2 text-center'>List of movies:</h1>
             <div className='row g-3 '>
                 {ar.map(item => {
                     return (

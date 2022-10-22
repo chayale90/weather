@@ -1,12 +1,15 @@
 import React from 'react'
 import AppColor from './appColor'
 import BitcoinList from './bitcoinList'
+import Kazino from './kazino'
 import MovieList from './movieList'
 
 export default function App_hwHooks() {
     return (
         <React.Fragment>
-            <MovieList />
+            <Kazino />
+            {/* <hr /> */}
+            {/* <MovieList /> */}
             {/* <hr /> */}
             {/* <BitcoinList /> */}
             {/* <hr /> */}

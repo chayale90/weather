@@ -11,7 +11,7 @@ export default function MovieItem(props) {
                 <h2>{item.title}</h2>
                 <div>Date: {item.release_date}</div>
                 <div>Score: {item.vote_average}</div>
-                <button onClick={() => { setshowInfo(!showInfo) }} className='btn btn-info my-2'>More Info</button>
+                <button onClick={() => { setshowInfo(!showInfo) }} className='btn btn-info my-2'>{(!showInfo) ?"Show Info" :"Hide Info"}</button>
                 {showInfo && <p>{item.overview}</p>}
             </div>
         </div>

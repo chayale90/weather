@@ -5,6 +5,7 @@ import MovieItem from './movieItem';
 export default function MovieList() {
     const [ar, setAr] = useState([])
 
+
     useEffect(() => {
         doApi();
     }, [])
@@ -24,12 +25,12 @@ export default function MovieList() {
 
 
     return (
-        <div className='container '>
+        <div className='container'>
             <h1 className='display-5 m-2 text-center'>List of movies:</h1>
             <div className='row g-3 '>
                 {ar.map(item => {
                     return (
-                            <MovieItem key={item.id} item={item} />
+                        <MovieItem key={item.id} item={item} />
                     )
                 })}
             </div>

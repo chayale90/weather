@@ -7,7 +7,7 @@ export default function WeatherInfo(props) {
     <div className='container text-center'>
       {(item.name) ? 
       <div>
-        <h1>Weather app</h1>
+        <h1 className='display-5'>Weather app</h1>
         <h2>Weather of: {item.name}</h2>
         <img src={`http://openweathermap.org/img/w/${item.weather[0].icon}.png`} width="150" alt="icon" />
         <div>condition: {item.weather[0].description}</div>

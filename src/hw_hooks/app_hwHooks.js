@@ -9,9 +9,9 @@ export default function App_hwHooks() {
     return (
         <React.Fragment>
 
-            <AppAtlas />
+            {/* <AppAtlas /> */}
             {/* <hr /> */}
-            {/* <Kazino /> */}
+            <Kazino />
             {/* <hr /> */}
             {/* <MovieList /> */}
             {/* <hr /> */}

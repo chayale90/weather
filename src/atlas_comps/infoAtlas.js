@@ -5,15 +5,16 @@ export default function InfoAtlas(props) {
     return (
         <div className='container text-center'>
             {(item.name) ?
-                <div className=' p-3'>
+                <div  className='p-3 col-md-8 shadow mx-auto mt-3'>
                     <h2 className='display-5'>{item.name.common}</h2>
                     <div>POP: {item.population.toLocaleString()} </div>
                     <div>Region: {item.region}</div>
                     <div>Languages: {Object.keys(item.languages)}</div>
                     <div>Coin: { Object.keys(item.currencies)}, {Object.values(item.currencies)[0].name}</div>
                     <div>Capital: {item.capital}</div>
-                    <div>borders: {item.borders}</div>
-
+                    <div>borders: {
+                    item.borders
+                    }</div>
                 </div>
                 : <h3>Loading...</h3>
             }

@@ -9,11 +9,8 @@ function App() {
   return (
     <div className="App">
 
-      {/* <AppWeather /> */}
-      {/* <AppTv /> */}
-      {/* <AppHooks /> */}
-      {/* <AppHw /> */}
-      <App_hwHooks/>
+      <AppWeather />
+
     </div>
   );
 }

@@ -8,16 +8,16 @@ export default function WeatherInfo(props) {
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: "center",
-    height: "578px"
+    height:"615px"
   };
 
   return (
-    <div className='container-fluid' style={myStyle}>
+    <div className='container-fluid' style={myStyle} >
       <div className='container text-center' >
         {(item.name) ?
           <div className='p-3'>
             <h2 className='display-3 text-light'>Weather app</h2>
-            <h1 className=' text-success'> {item.name}</h1>
+            <h1 className='text-success'> {item.name}</h1>
             <img src={`http://openweathermap.org/img/w/${item.weather[0].icon}.png`} width="150" alt="icon" />
             <h4>Condition: {item.weather[0].description}</h4>
             <h4>Temp: {item.main?.temp} celius</h4>
@@ -25,11 +25,8 @@ export default function WeatherInfo(props) {
           </div> :
           // <h2>Loading...</h2>
           <img src={"/images/hug.gif"} width="150"/>
-
-
         }
       </div>
-
     </div>
 
   )

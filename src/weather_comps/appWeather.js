@@ -7,7 +7,7 @@ export default function AppWeather() {
   const [infoObj, setInfoObj] = useState({});
 
   useEffect(() => {
-    doApi("Eilat")
+    doApi("Jerusalem")
   }, [])
 
   const doApi = async (_townName) => {

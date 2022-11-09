@@ -23,7 +23,8 @@ export default function WeatherInfo(props) {
             <h4>Temp: {item.main?.temp} celius</h4>
             <h4>Wind speed: {item.wind?.speed} kmh</h4>
           </div> :
-          <h2>Loading...</h2>
+          // <h2>Loading...</h2>
+          <img src={"/images/hug.gif"} width="150"/>
 
 
         }

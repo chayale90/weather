@@ -9,9 +9,11 @@ export default function WeatherInput(props) {
       <nav className="container">
 
         <div className='col-md-4 d-flex mx-auto text-center'>
-          <input onClick={() => {
-            
-            props.doApi(inputRef.current.value);}} ref={inputRef} type="text" className='form-control' placeholder='Search for city/town...' />
+          <input onKeyDown={(e) => {
+            if(e.keyDown=="Enter"){
+              props.doApi(inputRef.current.value);}} 
+            }
+            ref={inputRef} type="text" className='form-control' placeholder='Search for city/town...' />
           <button onClick={() => {
             props.doApi(inputRef.current.value);
           }} className='btn btn-success ms-2'>Search</button>

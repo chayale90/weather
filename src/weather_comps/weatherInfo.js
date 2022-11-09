@@ -3,12 +3,13 @@ import React from 'react'
 
 export default function WeatherInfo(props) {
   let item = props.item
+
   const myStyle = {
     backgroundImage: "url(images/img11.jpg)",
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: "center",
-    height:"615px"
+    height:"750px"
   };
 
   return (

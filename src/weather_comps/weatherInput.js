@@ -7,7 +7,6 @@ export default function WeatherInput(props) {
   return (
     <div className='container-fluid bg-warning p-2 '>
       <nav className="container">
-
         <div className='col-md-4 d-flex mx-auto text-center'>
           <input onKeyDown={(e)=>{
             if(e.key=="Enter"){

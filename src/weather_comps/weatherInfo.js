@@ -1,5 +1,5 @@
 import React from 'react'
-import ClipLoader from "react-spinners/ClipLoader";
+
 
 export default function WeatherInfo(props) {
   let item = props.item
@@ -23,14 +23,8 @@ export default function WeatherInfo(props) {
             <h4>Temp: {item.main?.temp} celius</h4>
             <h4>Wind speed: {item.wind?.speed} kmh</h4>
           </div> :
-
-          <ClipLoader
-            size={150}
-            color={"white"}
-            speedMultiplier={1.5}
-            aria-label="Loading Spinner"
-            data-testid="loader"
-          />
+<div>Loading...</div>
+    
 
         }
       </div>
